@@ -14,8 +14,8 @@
     <meta name="description" content="Responsive HTML5 Website Landing Page for Developers">
     <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
     <link rel="shortcut icon" href="favicon.ico">
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <!-- Plugins CSS -->
@@ -29,6 +29,13 @@
 
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Github Calendar -->
+    <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js">
+    </script>
+
+    <!-- xxx  -->
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -46,15 +53,18 @@
                 <h1 class="name">Rohan Khude</h1>
                 <h2 class="desc">Web and Software Developer</h2>
                 <ul class="social list-inline">
-                    <li><a href="http://stackoverflow.com/users/4635388/rohan-khude?tab=profile"><i class="fa fa-stack-overflow"></i></a></li>
-                    <li><a href="https://github.com/rohankhudedev"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/rohankhude/"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://www.facebook.com/rohan.khude.75"><i class="fa fa-facebook"></i></a></li>
-                    <li class="last-item"><a href="rohan_khude_r"><i class="fa fa-skype"></i></a></li>
+                    <li><a href="http://stackoverflow.com/users/4635388/rohan-khude?tab=profile" target="_blank"><i class="fa fa-stack-overflow"></i></a></li>
+                    <li><a href="https://github.com/rohankhudedev" target="_blank"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://gist.github.com/rohankhudedev" target="_blank"><i class="fa fa-code"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/rohankhude/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.facebook.com/rohan.khude.75" target="_blank"><i class="fa fa-facebook"></i></a></li>
                 </ul>
             </div>
             <!--//profile-->
-            <a class="btn btn-cta-primary pull-right" href="mailto:rohanrkhude@gmail.com" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>
+            <div class="pull-right">
+                <a class="btn btn-cta-primary" href="mailto:rohanrkhude@gmail.com" target="_blank"><i class="fa fa-paper-plane"></i> Mail</a>
+                <a class="btn btn-info" href="skype:rohan_khude_r?chat"><i class="fa fa-skype"></i> CHAT</a>
+            </div>
         </div>
         <!--//container-->
     </header>
@@ -223,19 +233,19 @@
                         <h2 class="heading">Work Experience</h2>
                         <div class="content">
                             <div class="item">
-                                <h3 class="title">Co-Founder & Lead Developer - <span class="place"><a href="#">Startup Hub</a></span> <span class="year">(2014 - Present)</span></h3>
+                                <h3 class="title">Junior Developer - <span class="place"><a href="#">Realbridge e-Marketing Solutions Pvt. Ltd.</a></span> <span class="year">(2016 - Present)</span></h3>
                                 <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Donec vitae sapien ut libero venenatis
                                     faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.</p>
                             </div>
                             <!--//item-->
                             <div class="item">
-                                <h3 class="title">Software Engineer - <span class="place"><a href="#">Google</a></span> <span class="year">(2013 - 2014)</span></h3>
+                                <h3 class="title">Back-End Intern - <span class="place"><a href="#">Traffic Steer</a></span> <span class="year">(2015 - 2016)</span></h3>
                                 <p>Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
                             </div>
                             <!--//item-->
 
                             <div class="item">
-                                <h3 class="title">Software Engineer - <span class="place"><a href="#">eBay</a></span> <span class="year">(2012 - 2013)</span></h3>
+                                <h3 class="title">C# .NET Intern - <span class="place"><a href="#">RN Softwares</a></span> <span class="year">(2013 - 2014)</span></h3>
                                 <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
                             </div>
                             <!--//item-->
@@ -249,18 +259,21 @@
                 <section class="github section">
                     <div class="section-inner">
                         <h2 class="heading">My GitHub</h2>
-                        <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget.
+                        <p>My GitHub contribution graph calendar</p>
+                        <!-- Prepare a container for your calendar. -->
+                        <div class="calendar">
+                            <!-- Loading stuff -->
+                            Loading the data just for you.
+                        </div>
+                        <script>
+                            GitHubCalendar(".calendar", "rohankhudedev");
+                        </script>
 
-                            <div id="github-graph" class="github-graph">
-
+                        <!-- <p>My GitHub activities</p>
+                            //Usage: http://caseyscarborough.com/projects/github-activity/
+                            <div id="ghfeed" class="ghfeed">
                             </div>
-                            <!--//github-graph-->
-
-                            <p>You can also embed your GitHub activities using Casey Scarborough's <a href="http://caseyscarborough.com/projects/github-activity/" target="_blank">GitHub Activity Stream</a> widget.
-                                <!--//Usage: http://caseyscarborough.com/projects/github-activity/ -->
-                                <div id="ghfeed" class="ghfeed">
-                                </div>
-                                <!--//ghfeed-->
+                            //ghfeed-->
 
                     </div>
                     <!--//secton-inner-->
@@ -290,7 +303,12 @@
                         <h2 class="heading">Skills</h2>
                         <div class="content">
                             <p class="intro">
-                                Intro about your skills goes here. Keep the list lean and only show your primary skillset. You can always provide a link to your Linkedin or Coderwall profile so people can get more info there.</p>
+                                <a href="http://stackexchange.com/users/5888000">
+                                    <!-- current image source is from linkedin -->
+                                    <img src="https://media.licdn.com/media-proxy/ext?w=208&h=58&f=n&hash=ge%2BtDh73LyKW2p%2FNMH7E3w2W4x8%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta9Er0UK-khgRxwQi6K-Pqkr-50hKCpfPB3LiRHP2q4zCf3Lhcc_febK_5ANB" width="208" height="58" alt="profile for Rohan Khude on Stack Exchange, a network of free, community-driven Q&amp;A sites"
+                                        title="profile for Rohan Khude on Stack Exchange, a network of free, community-driven Q&amp;A sites">
+                                </a>
+                            </p>
 
                             <div class="skillset">
 
@@ -349,13 +367,14 @@
                         <div class="content">
                             <div class="item">
                                 <blockquote class="quote">
-                                    <p><i class="fa fa-quote-left"></i>James is an excellent software engineer and he is passionate about what he does. You can totally count on him to deliver your projects!</p>
+                                    <p><i class="fa fa-quote-left"></i>Rohan you are an Excellent team worker, we made our many assignments and projects together and you have put a lot of effort into it, Our efforts and teamwork brought us lot of appreciation,
+                                        all the best Rohan.</p>
                                 </blockquote>
-                                <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur commodo</span></p>
+                                <p class="source"><span class="name">Nishu Garg</span><br /><span class="title">Edison Engineer</span></p>
                             </div>
                             <!--//item-->
 
-                            <p><a class="more-link" href="#"><i class="fa fa-external-link"></i> More on Linkedin</a></p>
+                            <p><a class="more-link" href="https://www.linkedin.com/in/rohankhude/"><i class="fa fa-external-link"></i> More on Linkedin</a></p>
 
                         </div>
                         <!--//content-->
@@ -464,21 +483,8 @@
                             <ul class="list-unstyled">
                                 <li><a href="http://getbootstrap.com/" target="_blank"><i class="fa fa-external-link"></i> Bootstrap</a></li>
                                 <li><a href="http://fortawesome.github.io/Font-Awesome/" target="_blank"><i class="fa fa-external-link"></i> FontAwesome</a></li>
-                                <li><a href="http://jquery.com/" target="_blank"><i class="fa fa-external-link"></i> jQuery</a></li>
-                                <li><a href="https://github.com/IonicaBizau/github-calendar" target="_blank"><i class="fa fa-external-link"></i> GitHub Calendar Plugin</a></li>
-
-                                <li><a href="http://caseyscarborough.com/projects/github-activity/" target="_blank"><i class="fa fa-external-link"></i> GitHub Activity Stream</a></li>
-
-                                <li><a href="https://github.com/sdepold/jquery-rss" target="_blank"><i class="fa fa-external-link"></i> jQuery RSS</a></li>
-
-                                <li>Profile image: <a href="https://www.flickr.com/photos/dotbenjamin/2577394151" target="_blank">Ben Smith</a></li>
-                                <li>iPad and iPhone mocks: <a href="https://dribbble.com/perlerar" target="_blank">Regy Perlera</a></li>
-
                             </ul>
-
                             <hr/>
-
-                            <p>This responsive portfolio template is handcrafted by UX designer <a href="https://www.linkedin.com/in/xiaoying" target="_blank">Xiaoying Riley</a> at <a href="http://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a>                                for developers and is <strong>FREE</strong> under the <a class="dotted-link" href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 License</a></p>
                             <p>We will improve or add new features to this template based on users' feedback so follow us on twitter to get notified when a new version is out!</p>
                             <a class="btn btn-cta-secondary btn-follow" href="https://twitter.com/3rdwave_themes" target="_blank"><i class="fa fa-twitter"></i> Follow us</a>
                             <a class="btn btn-cta-primary btn-download" href="http://themes.3rdwavemedia.com/website-templates/free-responsive-website-template-for-developers/" target="_blank"><i class="fa fa-download"></i> I want to download</a>
@@ -513,7 +519,6 @@
     <!-- github calendar plugin -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
     <!-- github activity plugin -->
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
     <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
