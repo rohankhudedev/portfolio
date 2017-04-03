@@ -533,6 +533,9 @@ iframe {
     .project-image {
         margin-bottom: 15px;
     }
+    .github{
+        display: none;
+    }
 }
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
