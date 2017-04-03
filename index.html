@@ -52,10 +52,31 @@
             })(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv=');
         </script>
 
+        <!-- For scrolling animation -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type='text/javascript'>
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 300) {
+                        $('#scroll').fadeIn();
+                    } else {
+                        $('#scroll').fadeOut();
+                    }
+                });
+                $('#scroll').click(function () {
+                    $("html, body").animate({scrollTop: 0}, 600);
+                    return false;
+                });
+            });
+        </script>
+        <!---->
+
 
     </head>
 
     <body>
+        <!-- BackToTop Button -->
+        <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
         <!-- ******HEADER****** -->
         <header class="header">
             <div class="container">
@@ -107,9 +128,8 @@
                                     <b>Experience</b>
                                 </p>
                                 <p>
-                                    <b>Total Exp. - </b> 1.9 yrs<br>
+                                    <b>Total Exp. - </b> 1yr 8months<br>
                                     <b>Current Employer - </b><a href="http://www.realbridge.in"> Realbridge e-Marketing Solutions Pvt. Ltd</a><br>
-                                    <b>Job Status</b> - Looking for change.
                                 </p>
 
                             </div>
