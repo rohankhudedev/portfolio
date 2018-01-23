@@ -64,38 +64,41 @@
         <!-- xxx  -->
         <!-- Google analytics Tracking Code -->
         <script>
-            (function (i, s, o, g, r, a, m) {
+            ( function( i, s, o, g, r, a, m ) {
                 i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
+                i[r] = i[r] || function() {
+                    ( i[r].q = i[r].q || [ ] ).push( arguments )
                 }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                        m = s.getElementsByTagName(o)[0];
+                a = s.createElement( o ),
+                        m = s.getElementsByTagName( o )[0];
                 a.async = 1;
                 a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+                m.parentNode.insertBefore( a, m )
+            } )( window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga' );
 
-            ga('create', 'UA-96760282-1', 'auto');
-            ga('send', 'pageview');
+            ga( 'create', 'UA-96760282-1', 'auto' );
+            ga( 'send', 'pageview' );
         </script>
 
         <!-- For scrolling animation -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script type="text/javascript">
-            $(document).ready(function () {
-                $(window).scroll(function () {
-                    if ($(this).scrollTop() > 300) {
-                        $('#scroll').fadeIn();
-                    } else {
-                        $('#scroll').fadeOut();
+            $( document ).ready( function() {
+                $( window ).scroll( function() {
+                    if( $( this ).scrollTop() > 300 )
+                    {
+                        $( '#scroll' ).fadeIn();
                     }
-                });
-                $('#scroll').click(function () {
-                    $("html, body").animate({scrollTop: 0}, 600);
+                    else
+                    {
+                        $( '#scroll' ).fadeOut();
+                    }
+                } );
+                $( '#scroll' ).click( function() {
+                    $( "html, body" ).animate( { scrollTop: 0 }, 600 );
                     return false;
-                });
-            });
+                } );
+            } );
         </script>
         <!---->
         <script type="application/ld+json">
@@ -106,10 +109,10 @@
             "alternateName": "Back-End Web & Software Developer",
             "url": "https://rohankhudedev.github.io/portfolio/",
             "potentialAction": {
-                "@type": "SearchAction",
-                "target": "rohan+khude+portfolio{search_term_string}",
-                "query-input": "required name=search_term_string"
-                }
+            "@type": "SearchAction",
+            "target": "rohan+khude+portfolio{search_term_string}",
+            "query-input": "required name=search_term_string"
+            }
             }
         </script>
     </head>
@@ -151,8 +154,8 @@
                             <h2 class="heading">About Me</h2>
                             <div class="content">
                                 <p>
-                                    <b>Languages:</b> Python, C#, PHP, Core Java<br />
-                                    <b>Frameworks:</b> Laravel, WordPress, Django<br/>
+                                    <b>Languages:</b> PHP,  C#, Python, Core Java<br />
+                                    <b>Frameworks:</b> Laravel, WordPress, .NET, Django<br/>
                                     <b>Operating System:</b> Ubuntu, Linux, Windows<br/>
                                     <b>Other :</b> Git, HTML, CSS, Javascript, Algorithms, Data Structure, Database, Selenium WebDriver, Vagrant, Regular Expressions.
                                 </p>
@@ -161,7 +164,7 @@
                                 </p>
                                 <p>
                                     <b>Total Exp. - </b> 2.7 Years<br>
-                                    <b>Current Employer - </b><a href="https://www.autumnworldwide.com/" title="Senior Developer">Senior Developer, Autumn Worldwide, Bangalore</a><br>
+                                    <b>Current Employer - </b><a href="https://www.autumnworldwide.com/" title="Senior Web Developer">Senior Web Developer, Autumn Worldwide, Bangalore</a><br>
                                 </p>
                             </div>
                             <!--//content-->
@@ -176,11 +179,11 @@
                             <div class="content">
 
                                 <div class="item featured text-center">
-                                    <h3 class="title"><a href="http://foodova.com" target="_blank" title="Your One Step Online B2B Marketplace">Foodova</a></h3>
-                                    <p class="summary">Your One Step Online B2B Marketplace</p>
+                                    <h3 class="title"><a href="https://knowledgetribe.in/" target="_blank" title="Knowledge Tribe">Knowledge Tribe</a></h3>
+                                    <p class="summary">The Home of the Knowledge Community</p>
                                     <div class="featured-image">
-                                        <a href="http://foodova.com" target="_blank" title="Foodova | Your One Step Online B2B Marketplace">
-                                            <img class="img-responsive project-image" src="assets/images/projects/project-featured.png" alt="Foodova B2B marketplace thumbnail" title="Foodova | Your One Step Online B2B Marketplace"/>
+                                        <a href="https://knowledgetribe.in/" target="_blank" title="Knowledge Tribe">
+                                            <img class="img-responsive project-image" src="assets/images/projects/project-featured.png" alt="Knowledge Tribe" title="Knowledge Tribe"/>
                                         </a>
                                         <div class="ribbon">
                                             <div class="text">New</div>
@@ -188,12 +191,12 @@
                                     </div>
 
                                     <div class="desc text-left">
-                                        <p>A B2B platform for food buyers and distributers. Technology stack - Python, Django, Vagrant, PostgreSQL, Git, Linux Platform.<br />
+                                        <p>Freelance Project - A platform created for Knowledge Seekers and enthusiasts to learn, contribute and interact with people with similar interests. <br/> <b>Technology Stack</b> - PHP, Laravel, Javascript, Git, Linux Platform.<br />
                                             <b>Team Size - </b>2
                                         </p>
                                     </div>
                                     <!--//desc-->
-                                    <a class="btn btn-cta-secondary" href="http://foodova.com" target="_blank" title="Your One Step Online B2B Marketplace"><i class="fa fa-thumbs-o-up"></i> Back my project</a>
+                                    <a class="btn btn-cta-secondary" href="https://knowledgetribe.in/" target="_blank" title="Knowledge Tribe"><i class="fa fa-thumbs-o-up"></i> Back my project</a>
                                 </div>
                                 <!--//item-->
                                 <hr class="divider" />
@@ -203,7 +206,8 @@
                                     </a>
                                     <div class="desc col-md-8 col-sm-8 col-xs-12">
                                         <h3 class="title"><a href="http://hospitra.com/" target="_blank">Hospitra - Destination Good Health</a></h3>
-                                        <p>Freelance Project - Network of dedicated &amp; highly qualified professionals allow you to make an informed choice about medical procedures.<br><strong>Technology Stack</strong> - PHP, Laravel, MySQL, JS, Git, Linux</p>
+                                        <p>Freelance Project - Network of dedicated &amp; highly qualified professionals allow you to make an informed choice about medical procedures.<br><strong>Technology Stack</strong> - PHP, Laravel, MySQL, Javascript, Git, Linux
+                                            <strong>Team Size - </strong> 1</p>
                                         <p><a class="more-link" href="http://hospitra.com/" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
                                     </div>
                                     <!--//desc-->
@@ -221,21 +225,26 @@
                             <h2 class="heading">Other Projects</h2>
                             <div class="content">
                                 <div class="item">
-                                    <h3 class="title"><a href="http://luminousindia.com" target="_blank">Custom Content Management System</a></h3>
-                                    <p class="summary">Created Custom CMS from scratch to manage top10pokersites.co.uk, comparebestpokersites.com, uksbestbettingsites.com and luminousindia.com/think-switch<br><b>Technology Stack</b> - PHP, MySQL, JS, Git, Linux.</p>
-                                    <p><a class="more-link" href="http://luminousindia.com" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
+                                    <h3 class="title"><a href="https://www.facebook.com/chatbot.gifter/" target="_blank">Diagio Facebook Chatbot</a></h3>
+                                    <p class="summary">Created Interactive chatbot simple gifting experience<br><b>Technology Stack</b> - PHP, MySQL, Git, Facebook Messenger API</p>
+                                    <p><a class="more-link" href="https://www.facebook.com/chatbot.gifter/" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
                                 </div>
+                                <!--<div class="item">
+                                    <h3 class="title"><a href="http://luminousindia.com" target="_blank">Custom Content Management System</a></h3>
+                                    <p class="summary">Created Custom CMS from scratch to manage skhgroup.co.in, etylbschool.com, top10pokersites.co.uk, comparebestpokersites.com, uksbestbettingsites.com and luminousindia.com/think-switch<br><b>Technology Stack</b> - PHP, MySQL, Javascript, Git, Linux platform.</p>
+                                    <p><a class="more-link" href="http://luminousindia.com" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
+                                </div>-->
                                 <!--//item-->
                                 <div class="item">
-                                    <h3 class="title"><a href="#">Automation for Appnext Users -Freelanced</a><!--<span class="label label-theme">Open Source</span>--></h3>
-                                    <p class="summary">Appnext is the First Self-Serve CPI bidding platform, exclusively dedicated to app discovery. Here user have to manually upload the offers which takes 25-30 min., this need to be improved. Appnext doesn't have API service. For overcoming time consumption on uploading i did automation using selenium webdriver and java. i have automated 95%. <br><b>Technology Stack - </b> Java, Selenium Web Driver, Jsoup</p>
+                                    <h3 class="title"><a href="#">Python Twitter API and Scraping</a><!--<span class="label label-theme">Open Source</span>--></h3>
+                                    <p class="summary">A CLI tool for fetching the Tweet and User details in bulk<br><b>Technology Stack - </b> Python, Tweepy(API library) and Scrapy(Scraping library)</p>
                                     <p><a class="more-link" href="#" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
                                 </div>
 
                                 <!--//item-->
                                 <div class="item">
                                     <h3 class="title"><a href="#">API Integration and Workflow Automation</a> </h3>
-                                    <p class="summary">The products functionality is to collect data from the Non-Standard API’s, compute the data, and integrate with traffic steer database. The predicting output will be automated solution.<b> <br>Technology Stack -</b> PHP, MySQL, HTML, CSS, JS</p>
+                                    <p class="summary">The products functionality is to collect data from the Non-Standard API’s, compute the data, and integrate with traffic steer database. The predicting output will be automated solution.<b> <br>Technology Stack -</b> PHP, MySQL, HTML, CSS, Javascript</p>
                                     <p><a class="more-link" href="#" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
                                 </div>
                                 <!--//item-->
@@ -285,7 +294,7 @@
                                 Loading the data just for you.
                             </div>
                             <script>
-                                GitHubCalendar(".calendar", "rohankhudedev");
+                                GitHubCalendar( ".calendar", "rohankhudedev" );
                             </script>
                             <!-- <p>My GitHub activities</p>
                                 //Usage: http://caseyscarborough.com/projects/github-activity/
@@ -331,17 +340,24 @@
                                     <div class="item">
                                         <h3 class="level-title">PHP &amp; Laravel<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to add more info...">Expert</span></h3>
                                         <div class="level-bar">
-                                            <div class="level-bar-inner" data-level="96%">
+                                            <div class="level-bar-inner" data-level="90%">
                                             </div>
                                         </div>
                                         <!--//level-bar-->
                                     </div>
                                     <!--//item-->
-
                                     <div class="item">
-                                        <h3 class="level-title">Python &amp; Django<span class="level-label">Pro</span></h3>
+                                        <h3 class="level-title">Javascript<span class="level-label">Pro</span></h3>
                                         <div class="level-bar">
-                                            <div class="level-bar-inner" data-level="85%">
+                                            <div class="level-bar-inner" data-level="75%">
+                                            </div>
+                                        </div>
+                                        <!--//level-bar-->
+                                    </div>
+                                    <div class="item">
+                                        <h3 class="level-title">Python &amp; Django<span class="level-label">Intermediate</span></h3>
+                                        <div class="level-bar">
+                                            <div class="level-bar-inner" data-level="60%">
                                             </div>
                                         </div>
                                         <!--//level-bar-->
@@ -357,15 +373,6 @@
                                         <!--//level-bar-->
                                     </div>
                                     <!--//item-->
-
-                                    <div class="item">
-                                        <h3 class="level-title">Javascript, JQuery<span class="level-label">intermediate</span></h3>
-                                        <div class="level-bar">
-                                            <div class="level-bar-inner" data-level="50%">
-                                            </div>
-                                        </div>
-                                        <!--//level-bar-->
-                                    </div>
                                     <p><a class="more-link" href="https://www.linkedin.com/in/rohankhude" target="_blank"><i class="fa fa-external-link" title="View linkedin profile of Rohan Khude"></i> More on Linkedin</a></p>
                                 </div>
                             </div>
