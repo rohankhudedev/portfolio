@@ -1,1 +1,0 @@
-GitHubCalendar(".calendar", "IonicaBizau");
