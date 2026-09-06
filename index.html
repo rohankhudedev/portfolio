@@ -210,7 +210,7 @@
             </div>
             <p class="max-w-sm text-sm leading-6 text-white/70">A practical range across product engineering, infrastructure, and emerging interfaces.</p>
           </div>
-          <div class="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-4" id="skills-grid"></div>
+          <div class="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3" id="skills-grid"></div>
         </div>
       </section>
 
@@ -410,28 +410,24 @@
     <script>
       let darkMode = false
       const skills = [
-        ['Languages', 'code-2', 'JavaScript · TypeScript · PHP · Python'],
+        ['Languages', 'code-2', 'JavaScript · TypeScript · PHP'],
 
         ['Frontend', 'layout', 'React.js · Next.js · Tailwind CSS · HTML5/CSS3 · Progressive Web Apps (PWA)'],
 
         ['Backend & CMS', 'server', 'Node.js · Express.js · Laravel · WordPress · Strapi (Headless CMS) · REST APIs'],
 
-        ['Cloud Platforms', 'cloud', 'AWS · EC2 · S3 · RDS · Lambda · CloudWatch · CloudFormation) · Microsoft Azure (Cognitive Services · AI Search) · Google Cloud Platform (GCP)'],
+        ['Cloud Platforms', 'cloud', 'AWS (EC2, S3, RDS, Lambda, CloudWatch, CloudFormation) · Microsoft Azure (Cognitive Services, AI Search) · Google Cloud Platform (GCP)'],
 
         ['DevOps', 'git-branch', 'GitHub Actions · Docker · Jenkins · CI/CD Pipelines · Nginx · Git'],
 
-        [
-          'AI & Conversational Interfaces',
-          'bot',
-          'OpenAI GPT / LLM Integration · Azure AI Search · AWS Lex · AWS Polly · n8n Workflow Automation · Chatbot Development (WhatsApp · Messenger · Alexa Skills · Google Actions)'
-        ],
+        ['AI & Conversational Interfaces', 'bot', 'OpenAI GPT / LLM Integration · Azure AI Search · AWS Lex · AWS Polly · n8n Workflow Automation · Chatbot Development (WhatsApp, WebChatbot)'],
 
         ['Databases', 'database', 'MySQL · MongoDB · Redis · Prisma ORM'],
 
         [
           'Security, Performance & Practices',
           'shield-check',
-          'VAPT (Vulnerability Assessment & Penetration Testing) · Web Application Security · REST API Design · Performance Optimization · Web Accessibility · Agile/Scrum'
+          'VAPT (Vulnerability Assessment & Penetration Testing) · Web Application Security · REST API Design · Performance Optimization · Web Accessibility · Agile/Scrum · SonarQube'
         ]
       ]
       const featured = [
@@ -442,7 +438,7 @@
           'layers-3',
           'Next.js · React · Node.js · AWS (EC2 · S3 · RDS · GCP · Strapi (Headless CMS) · Azure AI Search · Docker · CI/CD Pipelines · Nginx · Tailwind CSS · AMP Stories',
           'Built and continue to maintain a multilingual flagship corporate website on a headless CMS, with CI/CD pipeline, AMP Stories, integrated text-to-speech, and AI-powered site search.',
-          '5 properties'
+          'Flagship Platform'
         ],
         [
           'Birlawhite.com',
@@ -455,7 +451,7 @@
         ],
         [
           'Birlawhite.com, ETPGroup.com & Ordazzle.com',
-          'Multilingual Corporate Web Platform',
+          'Multilingual Brand Websites',
           'Jan 2025 – Present',
           'globe-2',
           'Next.js · React.js · Node.js · AWS (RDS, S3, EC2) · Strapi (Headless CMS) · Docker · CI/CD Pipelines · Nginx · Tailwind CSS · HTML5/CSS3',
@@ -482,7 +478,12 @@
         ]
       ]
       const projects = [
-        ['Inclusive Language Training Platform', 'Nov 2024 – Dec 2025', 'Built a voice-based training tool using AWS Lex for intent recognition, helping employees practice using a colleague\'s correct pronouns with accuracy feedback on their spoken responses.', 'Next.js, React, MongoDB, AWS Lex, AWS Polly, Azure Cognitive Speech, Node.js, NextAuth'],
+        [
+          'Inclusive Language Training Platform',
+          'Nov 2024 – Dec 2025',
+          "Built a voice-based training tool using AWS Lex for intent recognition, helping employees practice using a colleague's correct pronouns with accuracy feedback on their spoken responses.",
+          'Next.js · React · MongoDB · AWS Lex · AWS Polly · Azure Cognitive Speech · Node.js · NextAuth'
+        ],
         ['Volini Website', 'Jun 2022', 'Portfolio site with ACF, custom post types/status, cron jobs.', 'Laravel · Voyager · CI/CD · MySQL · JS · Git'],
         ['Sheldrick Wildlife Trust', 'Nov 2021 – Mar 2022', 'Patrol app for recording wildlife crime cases with offline PWA sync.', 'WordPress · PHP · JS · PWA · GraphQL'],
         ['Culprit.in (Custom E-commerce)', 'Sep – Oct 2021', 'Full e-com feature set plus CMS bulk import/export and stats dashboard.', 'Laravel · Voyager · MySQL · Razorpay · Git'],
@@ -512,7 +513,10 @@
           skills
             .map(
               ([name, icon, labels]) =>
-                `<article class="reveal border border-white/20 p-5"><i data-lucide="${icon}" class="h-5 w-5 text-lime"></i><h3 class="mt-5 font-bold">${name}</h3><p class="mt-2 text-sm leading-6 text-white/65">${labels}</p></article>`
+                `<article class="reveal border border-white/20 p-5"><i data-lucide="${icon}" class="h-5 w-5 text-lime"></i><h3 class="mt-5 font-bold">${name}</h3><div class="mt-4 flex flex-wrap gap-2">${labels
+                  .split(' · ')
+                  .map((label) => `<span class="rounded-full border border-white/25 bg-white/10 px-2.5 py-1 text-xs text-white/80">${label}</span>`)
+                  .join('')}</div></article>`
             )
             .join('')
         )
